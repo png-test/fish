@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="index.css">
+<script>
+function showText(id,delay){
+var elem=document.getElementById(id);
+setTimeout(function(){elem.style.visibility='visible';},delay*1000)
+}
+window.onload=function(){
+showText('delayedText1',2);
+showText('delayedText2',14);
+}
+</script>
+
+<div>
+<img src="titletext.jpg" class="center" alt="the fish">
+</div>
+
+<marquee behavior="slide">
+    	<img src="goldfish.png" height="1000">
+</marquee>
+
+
+<div id="delayedText2" style="visibility:hidden">
+<img src="footertext.jpg" class="center" alt="has arrived">
+</div>
+
+</html>
